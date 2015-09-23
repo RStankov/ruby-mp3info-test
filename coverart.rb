@@ -69,7 +69,7 @@ Dir.glob('files/*').each do |file|
   image_data = FetchArtwork.image_from_io(File.open(file))
 
   if image_data
-    File.open("images/#{File.basename(file)}.jpg", 'w') do |image|
+    File.open("images/#{File.basename(file, '.mp3')}.jpg", 'w') do |image|
       image.write image_data
     end
   end
