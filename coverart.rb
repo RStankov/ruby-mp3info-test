@@ -65,6 +65,14 @@ module FetchArtwork
   end
 end
 
+def status_for(image_data)
+  if image_data
+    "\x1B[32" << 'm' << 'pass' << "\x1B[0" << 'm'
+  else
+    "\x1B[31" << 'm' << 'failed' << "\x1B[0" << 'm'
+  end
+end
+
 Dir.glob('files/*').each do |file|
   image_data = FetchArtwork.image_from_io(File.open(file))
 
@@ -74,5 +82,6 @@ Dir.glob('files/*').each do |file|
     end
   end
 
-  puts "#{File.basename(file)}: #{image_data ? 'pass' : 'failed'}"
+  puts "#{File.basename(file)}: #{status_for(image_data)}"
 end
+
