@@ -1,0 +1,16 @@
+GIT
+  remote: git://github.com/RStankov/ruby-mp3info.git
+  revision: e75c290724b3ef87f1ea92b1e247d3d8f3555394
+  branch: fix-pictures-parsing-when-png-and-jpg-are-mixed
+  specs:
+    ruby-mp3info (0.8.7)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  ruby-mp3info!
