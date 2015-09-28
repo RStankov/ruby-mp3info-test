@@ -23,7 +23,9 @@
  "http://traffic.libsyn.com/themoment/TMBK15070701_Godin.mp3",
  "http://www.podtrac.com/pts/redirect.mp3/audio.wnyc.org/notetoself/notetoself092315_cms532751_pod.mp3",
  "http://traffic.libsyn.com/entreprogrammers/Episode-69-.mp3",
- "http://c.espnradio.com/s:J1X3L/audio/2551639/hottakedown_2015-09-22-122939.64k.mp3?ad_params=zones%3DPreroll%2CPreroll2%2CMidroll%2CMidroll2%2CMidroll3%2CMidroll4%2CMidroll5%2CMidroll6%2CPostroll%2CPostroll2%7Cstation_id%3D2786"
+ "http://c.espnradio.com/s:J1X3L/audio/2551639/hottakedown_2015-09-22-122939.64k.mp3?ad_params=zones%3DPreroll%2CPreroll2%2CMidroll%2CMidroll2%2CMidroll3%2CMidroll4%2CMidroll5%2CMidroll6%2CPostroll%2CPostroll2%7Cstation_id%3D2786",
+  "http://media.blubrry.com/chasingproduct/content.blubrry.com/chasingproduct/chasing-product-029-brian-casel.mp3",
+  "http://media.blubrry.com/tropicalmba/p/s3.amazonaws.com/TMBAPodcastAll/TMBAPODCAST227.mp3"
 ].each_with_index do |url, i|
   `wget #{url} -O files/file_#{i.to_s.rjust(3, '0')}.mp3`
 end
