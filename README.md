@@ -1,4 +1,4 @@
-# Mp3Info Info TestCase
+# Mp3Info TestCase
 
 ## Installation
 
