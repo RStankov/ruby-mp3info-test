@@ -10,7 +10,7 @@ bundle
 ### Seed data
 
 ```
-bundle exec ruby download
+bundle exec ruby download.rb
 ```
 
 _(sit back and relax, it might take a while)_
@@ -18,5 +18,5 @@ _(sit back and relax, it might take a while)_
 ### Test
 
 ```
-bundle exec ruby coverart
+bundle exec ruby coverart.rb
 ```
